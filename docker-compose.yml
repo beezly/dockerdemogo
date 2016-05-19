@@ -1,0 +1,9 @@
+---
+version: '2'
+services:
+  server: 
+    build: src/server
+  client:
+    build: src/client
+    depends_on: 
+      - server
