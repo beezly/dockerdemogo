@@ -3,7 +3,9 @@ version: '2'
 services:
   server: 
     build: src/server
+    mem_limit: 10485760
   client:
     build: src/client
+    mem_limit: 5000000
     depends_on: 
       - server
